@@ -1,0 +1,24 @@
+<title>Login</title>
+<div class="header-div">
+<h1>Login</h1>
+<br>
+<img class="waspy" src="/waspy.png" alt="Devil Wasp">
+<br><br>
+</div>
+<div class="login-div">
+    {{#if error}}Wrong Login Credentials, Please Try Again{{/if}}
+    <form class="form" method="POST">
+    <input class="name" name="email" placeholder="email" required>
+        <br>
+    <input class="name" name="password" type="password" placeholder="password" required>
+        <br>
+    <button id="submit" type="submit">Login</button>
+        <br>
+    <input name="_csrf" value="{{csrfToken}}" type="hidden">
+    <br><br>
+    <div class="home-div">
+        <br>
+        <p>Want To Take Action? Register <a href="/register">Here<a/>.</p>
+    </div>
+    </form>
+</div>

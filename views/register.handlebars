@@ -1,0 +1,24 @@
+<title>Register</title>
+<div class="header-div">
+    <h1>Register Here</h1>
+        <br>
+    <img class="waspy" src="/waspy.png" alt="Devil Wasp">
+    <br>
+</div>
+    <div class="register-div">{{#if error}} The was an Error {{/if}}
+        <form class="form" method="POST">
+            <input class="name" name="first" placeholder="First Name" required>
+                <br>
+            <input class="name" name="last" placeholder="Last Name" required>
+                <br>
+            <input class="name" name="email" placeholder="email" required>
+                <br>
+            <input class="name" type="password" name="password" placeholder="password" required>
+                <br>
+            <button id="submit" type="submit">Register</button>
+                <div class="home-div">
+                <p>Already Signed? Login <a href="/login">Here</a>.</p>
+                </div>
+            <input name="_csrf" value="{{csrfToken}}" type="hidden">
+        </form>
+    </div>

@@ -1,0 +1,17 @@
+<div id="maindiv">
+    <div class="text">
+        <h1>Sign Up to Help Ban <a href="https://en.wikipedia.org/wiki/Yellowjacket">Yellowjacket</a> Wasps From Public Places</h1>
+    </div>
+    <img class="waspy" src="/waspy.png"alt="Devil Wasp">
+    <div class="warning-div">
+        <p>Take This To Your Serious Consideration - Please Sign</p>
+    </div> {{#if error}} The was an Error {{/if}}
+    <form method="POST" class="form">
+        <input class="hidden" name="sign" type="hidden" style="width: 400px; height: 75px;">
+        <canvas id="canv" width='400px' height='75px'></canvas>
+        <button id="submit" type="submit">Submit</button>
+        <input name="_csrf" value="{{csrfToken}}" type="hidden">
+    </form>
+    <br>
+    {{>loggedIn}}
+</div>

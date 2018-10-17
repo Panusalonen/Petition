@@ -1,0 +1,18 @@
+<title>Profile</title>
+    <br><br>
+<div class="profile-div">
+    <img class="waspy" src="/waspy.png" alt="Devil Wasp">
+    <h1>Please tell us a littlebit about yourself!</h1>
+    <form method="POST" class="form">
+        <input class="name" name="age" placeholder="Age">
+        <br>
+        <input class="name" name="city" placeholder="City">
+        <br>
+        <input class="name" name="homepage" placeholder="Homepage">
+        <br>
+        <button id="submit" type="submit">Continue</button>
+        <br>
+        <input name="_csrf" value="{{csrfToken}}" type="hidden">
+    </form>
+    {{>loggedIn}}
+</div>

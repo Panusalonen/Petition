@@ -1,0 +1,15 @@
+<div class="thanks-div">
+    <h1>Thank you for signing!</h1>
+    <img class="waspy" src="/waspy2.gif" alt="Devil Wasp">
+    <p>Your Signature</p>
+    <img id="signature" src="{{ signature }}">
+        <br><br><br>
+    <form class="form" method="POST">
+        <div class="home-div">
+            <p><button id="button" class="deletelink" type="submit" href="/petition">Delete Your Signature</button></p>
+            <input name="_csrf" value="{{csrfToken}}" type="hidden">
+            {{>loggedIn}}
+        </div>
+    </form>
+</div>
+<!-- {{>loggedIn}} -->

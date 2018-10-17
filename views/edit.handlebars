@@ -1,0 +1,25 @@
+<title>User Profile</title>
+<div class="userprofile-div">
+<h1>Update Your Profile</h1>
+<form method="POST" class="form">
+    <input class="name" name="first" placeholder="First Name" value="{{userInfo.first}}">
+    <br>
+    <input class="name" name="last" placeholder="Last Name" value="{{userInfo.last}}">
+    <br>
+    <input class="name" name="email" placeholder="Email" value="{{userInfo.email}}">
+    <br>
+    <input class="name" type="password" name="password" placeholder="Password" value="{{userInfo.password}}">
+    <br>
+    <input class="name" name="age" placeholder="Age" value="{{userInfo.age}}">
+    <br>
+    <input class="name" name="city" placeholder="City" value="{{userInfo.city}}">
+    <br>
+    <input class="name" name="homepage" placeholder="Homepage" value="{{userInfo.homepage}}">
+    <br>
+    <button id="submit" type="submit">Update</button>
+    <br><br><br><br><br><br><br>
+    {{>loggedIn}}
+    <input name="_csrf" value="{{csrfToken}}" type="hidden">
+</form>
+<p>To Delete Your <a href="/thanks">Signature</a></p>
+</div>

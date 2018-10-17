@@ -1,0 +1,21 @@
+<div class="sign-div">
+    <h2>The Signatures <a>({{count}})</a></h2>
+    <ul class="list">
+
+    {{#each signers}}
+
+        {{#if homepage}}
+
+            <li><a href="{{homepage}}" target="_blank">{{first}} {{last}}</a>,  {{age}},  <a href="/signers/{{city}}">{{city}}</a></li>
+
+            {{else}}
+
+                <li>{{first}} {{last}},  {{age}},  <a href="/signers/{{city}}">{{city}}</a></li>
+
+        {{/if}}
+
+    {{/each}}
+    {{>loggedIn}}
+
+    </ul>
+</div>
